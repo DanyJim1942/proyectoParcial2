@@ -1,0 +1,43 @@
+<h2>
+    Comentarios de la comunidad (Anonimo)
+</h2>
+<div *ngIf="!usuarios.length">No hay usuarios por el momento</div>
+<div *ngIf="usuarios.length">
+    <div id="headers">
+        <span>NickName</span>
+        <span>Comentario</span>  
+    </div>
+    <article *ngFor="let usuariof of usuarios">
+        <span>{{usuariof.nombref}}</span>
+        <span>{{usuariof.comentariof}}</span> 
+    </article>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalRegistro">Agrega un comentario aqui</button>
+<div class="modal fade" id="ModalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registro para comentario anonimo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <span>NickName: &NonBreakingSpace;</span>
+            <input type="text" [(ngModel)]="usuariof.nombref">
+          </p>
+          <p>
+            <span>comentario: &NonBreakingSpace;</span>
+            <input type="text" [(ngModel)]="usuariof.comentariof">
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" (click)="this.nuevoUsuario()">Agregar</button>
+        </div>
+      </div>
+    </div>
+  </div>

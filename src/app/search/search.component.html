@@ -1,0 +1,18 @@
+<div class="row animated fadeIn fast" *ngIf="indice == -1"> 
+    <div class="col md-12">
+        <div class="alert alert-info" role="alert">
+            <div class="jumbotron">
+                <h1 class="display-4"> No existen resultados de: {{nombreh}}</h1>
+                <p class="lead">Pronto sera redirigido a la pagina de heroers</p>
+                <hr class="my-4">
+                <div class="text-center">
+                    <img src="assets/img/errorBusqueda.jpg" class="pull-right" width="40%" height="40%"/>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<app-unheroe *ngIf="indice != -1" [heroe]='miheroe'></app-unheroe>

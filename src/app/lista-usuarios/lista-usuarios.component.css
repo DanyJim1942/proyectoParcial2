@@ -1,0 +1,23 @@
+article,
+#headers {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: olive
+}
+
+#headers {
+    background-color: aqua;
+}
+
+span {
+    display: inline-block;
+    width: 22%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+article>span {
+    color: white;
+}

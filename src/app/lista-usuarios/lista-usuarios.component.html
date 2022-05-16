@@ -1,0 +1,18 @@
+<h2>
+    Listado Usuarios Registrados
+</h2>
+<div *ngIf="!usuarios.length">No hay usuarios por el momento</div>
+<div *ngIf="usuarios.length">
+    <div id="headers">
+        <span>Nombre</span>
+        <span>Correo</span>
+        <span>Sexo</span>
+        <span>Fecha de Nacimiento</span>
+    </div>
+    <article *ngFor="let usuario of usuarios">
+        <span>{{usuario.nombre}}</span>
+        <span>{{usuario.correo}}</span>
+        <span>{{usuario.sexo}}</span>
+        <span>{{usuario.fecha}}</span>
+    </article>
+</div>

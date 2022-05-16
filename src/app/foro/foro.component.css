@@ -1,0 +1,28 @@
+article,
+#headers {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: olive;
+    align-items: center;
+    justify-content: center;
+}
+
+#headers {
+    background-color: aqua;
+}
+
+span {
+    width: 22%;
+    margin-right: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+article>span {
+    color: white;
+}
+button{
+    margin: auto;
+}
