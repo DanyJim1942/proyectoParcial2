@@ -4,13 +4,13 @@ article,
     border-bottom: 1px solid #ddd;
     padding: 10px;
     font-size: 0.9em;
-    background-color: olive;
+    background-color: gray;
     align-items: center;
     justify-content: center;
 }
 
 #headers {
-    background-color: aqua;
+    background-color: lightskyblue;
 }
 
 span {
