@@ -4,11 +4,11 @@ article,
     border-bottom: 1px solid #ddd;
     padding: 10px;
     font-size: 0.9em;
-    background-color: olive
+    background-color: gray
 }
 
 #headers {
-    background-color: aqua;
+    background-color: lightskyblue;
 }
 
 span {
